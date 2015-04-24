@@ -1,0 +1,19 @@
+package ejercicio2;
+
+import java.util.Scanner;
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vectnummay vnm = new Vectnummay();
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("ingrese el valor con el cual comparar");
+		private int primero = teclado.nextInt(); 
+		teclado.close();
+		vnm.cargar( primero);
+		vnm.imprimir();
+		System.out.println("el valor ingresado es:" + primero);
+	}
+
+}

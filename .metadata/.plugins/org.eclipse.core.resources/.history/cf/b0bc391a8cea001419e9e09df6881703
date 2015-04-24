@@ -1,0 +1,23 @@
+package ejercicio3;
+import java.util.Scanner;
+public class Cliente extends Persona {
+	int cuit;
+	String direccion;
+	
+	public void setdireccion(){
+		Scanner teclado = new Scanner(System.in);
+		this.direccion = teclado.next();
+		teclado.close();
+	}
+	public void getdireccion(){
+		System.out.println(this.direccion);
+	}
+	public void setcuit(){
+		Scanner teclado = new Scanner(System.in);
+		this.cuit = teclado.nextInt();
+		teclado.close();
+	}
+	public void getcuit(){
+		System.out.println(this.cuit);
+	}
+}

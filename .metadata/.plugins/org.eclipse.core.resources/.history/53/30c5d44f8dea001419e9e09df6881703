@@ -1,0 +1,48 @@
+package ejercicio3;
+
+import java.util.Scanner;
+
+public class Empleado extends Persona {
+	int legajo;
+	String puesto;
+	
+	public String descGral(){
+		return super.descGral()+" Legajo:"+this.legajo+" Puesto:"+this.puesto;
+	}
+	
+	public void setdni(){
+		super.setdni();
+	}
+	public void setnombre(){
+		super.setnombre();
+	}
+	public void setapellido(){
+		super.setapellido();
+	}
+	public void getdni(){
+		System.out.println(this.dni);
+	}
+	public void getnombre(){
+		System.out.println(this.nombre);
+	}
+	public void getapellido(){
+		System.out.println(this.apellido);
+	}
+	public void setpuesto(){
+		Scanner teclado = new Scanner(System.in);
+		this.puesto = teclado.next();
+		teclado.close();
+	}
+	public void getpuesto(){
+		System.out.println(this.puesto);
+	}
+	public void setlegajo(){
+		Scanner teclado = new Scanner(System.in);
+		this.legajo = teclado.nextInt();
+		teclado.close();
+	}
+	public void getlegajo(){
+		System.out.println(this.legajo);
+	}
+}
+

@@ -1,0 +1,30 @@
+package ejercicio3;
+
+import java.util.Scanner;
+
+public class Empleado extends Persona {
+	int legajo;
+	String puesto;
+	
+	public String descGral(){
+		return super.desGral()+" Legajo:"+this.legajo+" Puesto:"+this.puesto;
+	}
+	
+	public void setpuesto(){
+		Scanner teclado = new Scanner(System.in);
+		this.puesto = teclado.next();
+		teclado.close();
+	}
+	public void getpuesto(){
+		System.out.println(this.puesto);
+	}
+	public void setlegajo(){
+		Scanner teclado = new Scanner(System.in);
+		this.legajo = teclado.nextInt();
+		teclado.close();
+	}
+	public void getlegajo(){
+		System.out.println(this.legajo);
+	}
+}
+

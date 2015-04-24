@@ -1,0 +1,14 @@
+package ejercicio1;
+import java.util.Scanner;
+public class Vectornumeros {
+	private Scanner teclado;
+	private int[] numeros;
+	
+	public void cargar(){
+		teclado = new Scanner(system.in);
+		numeros = new int[15];
+		for (int f = 0; f < numeros.length; i++) {
+			
+		}
+	}
+}
