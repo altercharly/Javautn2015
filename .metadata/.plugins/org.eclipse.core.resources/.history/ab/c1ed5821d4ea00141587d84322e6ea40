@@ -12,7 +12,7 @@ public class Persona {
 		System.out.println("ingrese el dni:");
 		Scanner teclado = new Scanner(System.in);
 		this.dni = Integer.parseInt(teclado.nextLine());
-		//teclado.close();
+		teclado.close();
 	}
 	public void setnombre(){
 		System.out.println("ingrese el nombre:");

@@ -23,8 +23,8 @@ public class Empleado extends Persona {
 	public void setpuesto(){
 		System.out.println("ingrese el puesto:");
 		Scanner teclado = new Scanner(System.in);
-		this.puesto = teclado.nextLine();
-		//teclado.close();
+		this.puesto = teclado.next();
+		teclado.close();
 	}
 	public String getpuesto(){
 		return puesto;
@@ -32,8 +32,8 @@ public class Empleado extends Persona {
 	public void setlegajo(){
 		System.out.println("ingrese el legajo:");
 		Scanner teclado = new Scanner(System.in);
-		this.legajo = Integer.parseInt(teclado.nextLine());
-		//teclado.close();
+		this.legajo = Integer.parseInt(teclado.next());
+		teclado.close();
 	}
 	public int getlegajo(){
 		return legajo;

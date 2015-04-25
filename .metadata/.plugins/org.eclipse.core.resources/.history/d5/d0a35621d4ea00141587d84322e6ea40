@@ -22,7 +22,7 @@ public class Cliente extends Persona {
 		System.out.println("ingrese el direccion:");
 		Scanner teclado = new Scanner(System.in);
 		this.direccion = teclado.nextLine();
-		//teclado.close();
+		teclado.close();
 	}
 	public void getdireccion(){
 		System.out.println(this.direccion);
@@ -31,7 +31,7 @@ public class Cliente extends Persona {
 		System.out.println("ingrese el cuit:");
 		Scanner teclado = new Scanner(System.in);
 		this.cuit = Integer.parseInt(teclado.nextLine());
-		//teclado.close();
+		teclado.close();
 	}
 	public void getcuit(){
 		System.out.println(this.cuit);

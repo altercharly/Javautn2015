@@ -37,7 +37,7 @@ public class Principal {
 		}
 		teclado.close();
 	
-	for(int i=0; i<4; i++){
+	for(int i=0; i<3; i++){
 	//ordenado por DNI
 		for(int j=i+1; j<5; j++){
 			if (pers[i].dni > pers[j].dni){

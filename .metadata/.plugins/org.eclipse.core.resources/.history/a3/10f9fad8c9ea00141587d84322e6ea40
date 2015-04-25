@@ -11,20 +11,20 @@ public class Persona {
 	public void setdni(){
 		System.out.println("ingrese el dni:");
 		Scanner teclado = new Scanner(System.in);
-		this.dni = Integer.parseInt(teclado.nextLine());
-		//teclado.close();
+		this.dni = Integer.parseInt(teclado.next());
+		teclado.close();
 	}
 	public void setnombre(){
 		System.out.println("ingrese el nombre:");
 		Scanner teclado = new Scanner(System.in);
-		this.nombre = teclado.nextLine();
-		//teclado.close();
+		this.nombre = teclado.next();
+		teclado.close();
 	}
 	public void setapellido(){
 		System.out.println("ingrese el apellido:");
 		Scanner teclado = new Scanner(System.in);
-		this.apellido = teclado.nextLine();
-		//teclado.close();
+		this.apellido = teclado.next();
+		teclado.close();
 	}
 	public int getdni(){
 		return dni;
